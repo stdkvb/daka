@@ -1,0 +1,117 @@
+@font-face {
+	font-family: Inter;
+	font-display: swap;
+	src: url("@fonts/Inter-Black.woff2") format("woff2"), url("@fonts/Inter-Black.woff") format("woff");
+	font-weight: 900;
+	font-style: normal;
+}
+@mixin FontFamilyInterBlack {
+	font-family: Inter, sans-serif;
+	font-weight: 900;
+	line-height: 140%;
+}
+
+@font-face {
+	font-family: Inter;
+	font-display: swap;
+	src: url("@fonts/Inter-Bold.woff2") format("woff2"), url("@fonts/Inter-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
+@mixin FontFamilyInterBold {
+	font-family: Inter, sans-serif;
+	font-weight: 700;
+	line-height: 140%;
+}
+
+@font-face {
+	font-family: Inter;
+	font-display: swap;
+	src: url("@fonts/Inter-ExtraLight.woff2") format("woff2"), url("@fonts/Inter-ExtraLight.woff") format("woff");
+	font-weight: 200;
+	font-style: normal;
+}
+@mixin FontFamilyInterExtralight {
+	font-family: Inter, sans-serif;
+	font-weight: 200;
+	line-height: 140%;
+}
+
+@font-face {
+	font-family: Inter;
+	font-display: swap;
+	src: url("@fonts/Inter-Medium.woff2") format("woff2"), url("@fonts/Inter-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+}
+@mixin FontFamilyInterMedium {
+	font-family: Inter, sans-serif;
+	font-weight: 500;
+	line-height: 140%;
+}
+
+@font-face {
+	font-family: Inter;
+	font-display: swap;
+	src: url("@fonts/Inter-Regular.woff2") format("woff2"), url("@fonts/Inter-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@mixin FontFamilyInterRegular {
+	font-family: Inter, sans-serif;
+	font-weight: 400;
+	line-height: 140%;
+}
+
+@font-face {
+	font-family: Inter;
+	font-display: swap;
+	src: url("@fonts/Inter-Light.woff2") format("woff2"), url("@fonts/Inter-Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+}
+@mixin FontFamilyInterLight {
+	font-family: Inter, sans-serif;
+	font-weight: 300;
+	line-height: 140%;
+}
+
+@font-face {
+	font-family: Inter;
+	font-display: swap;
+	src: url("@fonts/Inter-ExtraBold.woff2") format("woff2"), url("@fonts/Inter-ExtraBold.woff") format("woff");
+	font-weight: 800;
+	font-style: normal;
+}
+@mixin FontFamilyInterExtrabold {
+	font-family: Inter, sans-serif;
+	font-weight: 800;
+	line-height: 140%;
+}
+
+@font-face {
+	font-family: Inter;
+	font-display: swap;
+	src: url("@fonts/Inter-Thin.woff2") format("woff2"), url("@fonts/Inter-Thin.woff") format("woff");
+	font-weight: 100;
+	font-style: normal;
+}
+@mixin FontFamilyInterThin {
+	font-family: Inter, sans-serif;
+	font-weight: 100;
+	line-height: 140%;
+}
+
+@font-face {
+	font-family: Inter;
+	font-display: swap;
+	src: url("@fonts/Inter-SemiBold.woff2") format("woff2"), url("@fonts/Inter-SemiBold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+}
+@mixin FontFamilyInterSemibold {
+	font-family: Inter, sans-serif;
+	font-weight: 600;
+	line-height: 140%;
+}
+
