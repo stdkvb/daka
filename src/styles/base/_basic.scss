@@ -28,7 +28,8 @@ h1 {
 }
 
 h2 {
-	@include medium-32;
+	@include regular-20-uppercase;
+	color: $grey-70;
 }
 
 h3 {
@@ -53,4 +54,10 @@ button {
 
 .container {
 	padding: 0 160px;
+}
+
+.wrapper {
+	margin: 40px 0 100px 0;
+	padding: 60px 0 0 0;
+	border-top: solid 1px $red-20;
 }

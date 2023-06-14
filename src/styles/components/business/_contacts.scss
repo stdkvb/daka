@@ -1,0 +1,46 @@
+.contacts {
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+		.contacts__info {
+			align-self: flex-end;
+			width: 840px;
+			display: flex;
+			flex-direction: column;
+			gap: 30px;
+	
+			div {
+				border-bottom: solid 1px $grey-70;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 20px 0;
+	
+				span {
+					flex-grow: 2;
+					@include regular-16-uppercase;
+					color: $grey-40;
+				}
+				
+				a {
+					flex-grow: 2;
+					max-width: 460px;
+					@include regular-16-uppercase;
+					color: $grey-70;
+				}
+
+				p {
+					flex-grow: 2;
+					max-width: 460px;
+					@include regular-16-uppercase;
+					color: $grey-70;
+				}
+			}
+		}
+
+		.contacts__map {
+			margin-top: 100px;
+			min-height: 400px;
+		}
+	}
+}
