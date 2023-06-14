@@ -1,0 +1,43 @@
+input {
+	transition: all $transitionDuration;
+	padding: 20px 0;
+	border: none;
+	border-bottom: solid 1px rgba(255, 255, 255, 0.7);;
+	outline: none;
+	@include regular-16-uppercase;
+	color: rgba(255, 255, 255, 0.7);
+	background-color: transparent;
+
+	&:focus, &[type^=hidden]:focus + input {
+
+	}
+	&:disabled {
+
+	}
+	&::placeholder {
+		color: rgba(255, 255, 255, 0.7);;
+	}
+}
+
+.input__container {
+	@include regular-14;
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: .75rem;
+
+	.placeholder {
+		position: absolute;
+		color: $white;
+		top: 1.0625rem;
+		left: .75rem;
+
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+}
+

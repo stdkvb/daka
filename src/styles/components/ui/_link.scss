@@ -1,0 +1,18 @@
+.link {
+	width: fit-content;
+	@include regular-16-uppercase;
+	color: $grey-70;
+	@include transition;
+
+	&:hover {
+		color: $red-50;
+	}
+
+	&:focus {
+		border-bottom: solid 1px $red-50;
+	}
+
+	&_white {
+		color: $white;
+	}
+}

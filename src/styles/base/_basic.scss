@@ -7,11 +7,20 @@
 
 html {
 	scroll-behavior: smooth;
+	height: 100%;
 }
 
 body {
 	overflow-x: hidden;
 	position: relative;
+	background-image: url(@icons/background.svg);
+	display: flex;
+	flex-direction: column;
+  height: 100%;
+}
+
+main {
+	flex: 1 0 auto;
 }
 
 h1 {
@@ -40,4 +49,8 @@ button {
 	:disabled {
 		cursor: default;
 	}
+}
+
+.container {
+	padding: 0 160px;
 }

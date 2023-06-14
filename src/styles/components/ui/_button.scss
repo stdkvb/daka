@@ -1,0 +1,56 @@
+.btn {
+	@include bold-20-uppercase;
+	height: 52px;
+	padding: 0;
+	border: none;
+	color: $red-50;
+	position: relative;
+	cursor: pointer;
+	@include transition;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	background: transparent;
+	overflow: hidden;
+	gap: 8px;
+
+	&:before {
+		content: url(@icons/arrow-right.svg);
+		@include transition;
+		transform: translateX(-100%);
+	}
+
+	&:after {
+		content: url(@icons/arrow-left.svg);
+		@include transition;
+		transform: translateX(100%);
+	}
+
+	&_disable {
+		color: $grey-60;
+		cursor: default;
+	}
+
+	.children {
+		min-width: fit-content;
+	}
+}
+
+.btn:hover {
+	color: $grey-70;
+
+	&:before {
+		transform: translateX(0);
+
+	}
+
+	&:after {
+		transform: translateX(0);
+	}
+}
+
+.btn:focus {
+	border: 1px dashed #C61B0F;
+}
+

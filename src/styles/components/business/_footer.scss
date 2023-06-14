@@ -1,0 +1,69 @@
+.footer {
+	flex: 0 0 auto;
+	background-color: $grey-80;
+	padding-top: 60px;
+	padding-bottom: 20px;
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+
+		&:first-of-type {
+			padding-bottom: 60px;
+			border-bottom: solid 1px $red-20;
+		}
+
+		&:last-of-type {
+			padding-top: 20px;
+		}
+	}
+	
+	img {
+		max-height: 51px;
+	}
+
+	nav {
+		display: flex;
+		gap: 168px;
+		
+		div {
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+
+			a:nth-child(1) {
+				margin-bottom: 2px;
+				@include regular-16-uppercase;
+			}
+
+			a {
+				@include regular-14-uppercase;
+			}
+		}
+	}
+
+	&__copyrights {
+		color: $white;
+		@include regular-16;
+	}
+
+	&__dev {
+		@include regular-16-uppercase;
+		color: $white;
+
+		span {
+			color: $red-50;
+			@include transition;
+		}
+
+		&:hover {
+			span {
+				color: $white;
+			}
+		}
+	}
+
+	&__privacy {
+		color: $white;
+	}
+}

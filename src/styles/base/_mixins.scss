@@ -1,3 +1,7 @@
+@mixin transition {
+	transition: all $transitionDuration;
+}
+
 @mixin bold-72 {
 	font-size: 72px;
 	font-weight: 600;	
@@ -8,6 +12,13 @@
 	font-size: 20px;
 	font-weight: 600;
 	line-height: 140%;
+}
+
+@mixin bold-20-uppercase {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 140%;
+	text-transform: uppercase;
 }
 
 @mixin medium-32 {
@@ -66,6 +77,12 @@
 	line-height: 120%;
 }
 
+@mixin regular-14-uppercase {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 120%;
+	text-transform: uppercase;
+}
 
 @mixin light-20 {
 	font-size: 20px;

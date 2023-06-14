@@ -1,0 +1,75 @@
+.select {
+	position: relative;
+	&__button {
+		display: flex;
+		align-items: center;
+		gap: 7px;
+
+		span {
+			@include regular-16-uppercase;
+			color: $grey-70;
+			@include transition;
+		}
+
+		svg {
+			@include transition;
+			path {
+				@include transition;
+			}
+		}
+
+		&:hover {
+			cursor: pointer;
+			svg {
+				path {
+					fill: $red-50;
+				}
+			}
+			span {
+				color: $red-50;
+			}
+		}
+	}
+
+	&__options {
+		position: absolute;
+		margin-top: 6px;
+		height: 0;
+		overflow: hidden;
+		@include transition;
+		opacity: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 2px;
+	}
+
+	&__option {
+		a {
+			@include regular-14-uppercase;
+			color: $grey-70;
+		}
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	&.active {
+		.select__button {
+			span {
+				color: $red-50;
+			}
+		
+			svg {
+				transform: rotate(180deg);
+				path {
+					fill: $red-50;
+				}
+			}
+		}
+		.select__options {
+			height: auto;
+			opacity: 1;
+		}
+	}
+}
