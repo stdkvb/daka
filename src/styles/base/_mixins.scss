@@ -8,6 +8,39 @@
 	line-height: 100%;
 }
 
+@mixin bold-72-uppercase {
+	font-size: 72px;
+	font-weight: 600;	
+	line-height: 100%;
+	text-transform: uppercase;
+}
+
+@mixin bold-50 {
+	font-size: 50px;
+	font-weight: 600;	
+	line-height: 100%;
+}
+
+@mixin bold-50-uppercase {
+	font-size: 50px;
+	font-weight: 600;	
+	line-height: 100%;
+	text-transform: uppercase;
+}
+
+@mixin bold-36 {
+	font-size: 36px;
+	font-weight: 600;	
+	line-height: 100%;
+}
+
+@mixin bold-36-uppercase {
+	font-size: 36px;
+	font-weight: 600;	
+	line-height: 100%;
+	text-transform: uppercase;
+}
+
 @mixin bold-20 {
 	font-size: 20px;
 	font-weight: 600;

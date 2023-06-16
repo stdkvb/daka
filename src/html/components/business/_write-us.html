@@ -1,0 +1,16 @@
+<section class="write-us container" id="write-us">
+	<div class="wrapper">
+		<h2>write-us</h2>
+		<form>
+			<h3>Ready to discuss cooperation?</h3>
+			<div class="write-us__columns">
+				@@include('components/ui/_input-text.html', {placeholder: 'name'})
+				@@include('components/ui/_input-text.html', {placeholder: 'company'})
+				@@include('components/ui/_input-email.html', {placeholder: 'e-mail'})
+				@@include('components/ui/_input-phone.html', {placeholder: 'phone number'})
+			</div>
+			@@include('components/ui/_input-text.html', {placeholder: 'your question'})
+			@@include('components/ui/_button.html', {children: 'send message', type: 'submit'})
+		</form>
+	</div>
+</section>

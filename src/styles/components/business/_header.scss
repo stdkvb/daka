@@ -3,9 +3,107 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	gap: 20px;
 
-	nav {
+	img {
+		@include tablet_small {
+			max-width: 90px;
+		}
+	}
+
+	&__desktop-menu {
 		display: flex;
 		gap: 80px;
+
+		@include desktop_medium {
+			width: 100%;
+			gap: 20px;
+			justify-content: space-between;
+		}
+
+		@include tablet_small {
+			display: none;
+		}
+	}
+
+	&__btn {
+		min-width: 180px;
+
+		@include desktop_small {
+			display: none;
+		}
+	}
+
+	.burger {
+		background-image: url(@icons/burger.svg);
+		background-color: transparent;
+		border: none;
+		height: 32px;
+		width: 32px;
+		position: absolute;
+		z-index: 10;
+		top: 36px;
+		right: 30px;
+		&:hover {
+			cursor: pointer;
+		}
+		@include min_tablet_small {
+			display: none;
+		}
+	}
+
+	&__mobile-menu {
+		height: 100vh;
+		width: 360px;
+		background-color: white;
+		position: fixed;
+		top: 0;
+		z-index: 10;
+		padding: 50px;
+		transition: transform 0.7s ease;
+		left: -360px;
+		@include tablet {
+			width: 100vw;
+			left: -100vw;
+		}
+
+		&.active {
+			transition: all 0.7s ease;
+			transform: translateX(360px);
+			@include tablet {
+				transform: translateX(100vw);
+			}
+		}
+
+		.close {
+			background-image: url(@icons/close.svg);
+			background-color: transparent;
+			border: none;
+			height: 32px;
+			width: 32px;
+			position: absolute;
+			z-index: 20;
+			top: 25px;
+			right: 25px;
+			&:hover {
+				cursor: pointer;
+			}
+			@include min_desktop_large {
+				display: none;
+			}
+		}
+
+		nav {
+			display: flex;
+			align-items: right;
+			flex-direction: column;
+			justify-content: space-between;
+			gap: 20px;
+			width: 100%;
+
+			.btn {
+				max-width: 180px;
+			}
+		}
 	}
 }

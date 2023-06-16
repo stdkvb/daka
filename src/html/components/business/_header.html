@@ -1,6 +1,6 @@
 <header class="header container">
 	<img src="@icons/logo.svg">
-	<nav>
+	<nav class="header__desktop-menu">
 		<a class="link" href="#about">about</a>
 		<div class="select">
 			<div class="select__button">
@@ -21,8 +21,19 @@
 				</li>
 			</ul>
 		</div>
-		<a class="link" href="partners">partners</a>
-		<a class="link" href="contacts">contacts</a>
+		<a class="link" href="#partners">partners</a>
+		<a class="link" href="#contacts">contacts</a>
 	</nav>
-	@@include('components/ui/_button.html', {children: 'send message'})
+	@@include('components/ui/_button-link.html', {children: 'send message', href: '#write-us', class: 'header__btn'})
+	<button class="burger" id="burger"></button>
+	<div class="header__mobile-menu" id="menu">
+		<nav>
+			<a class="link" href="#about">about</a>
+			<a class="link" href="#/products">products</a>
+			<a class="link" href="#partners">partners</a>
+			<a class="link" href="#contacts">contacts</a>
+			@@include('components/ui/_button-link.html', {children: 'send message', href: '#write-us'})
+		</nav>
+		<button class="close" id="close"></button>
+ </div>
 </header>

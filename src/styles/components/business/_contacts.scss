@@ -2,19 +2,27 @@
 	.wrapper {
 		display: flex;
 		flex-direction: column;
+		gap: 15px;
 		.contacts__info {
 			align-self: flex-end;
-			width: 840px;
+			width: 100%;
+			max-width: 840px;
 			display: flex;
 			flex-direction: column;
 			gap: 30px;
 	
 			div {
 				border-bottom: solid 1px $grey-70;
-				display: flex;
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
 				justify-content: space-between;
 				align-items: center;
 				padding: 20px 0;
+
+				@include mobile {
+					grid-template-columns: 1fr;
+					gap: 15px;
+				}
 	
 				span {
 					flex-grow: 2;
@@ -41,6 +49,14 @@
 		.contacts__map {
 			margin-top: 100px;
 			min-height: 400px;
+
+			@include tablet {
+				margin-top: 60px;
+			}
+
+			@include mobile {
+				margin-top: 30px;
+			}
 		}
 	}
 }

@@ -15,4 +15,3 @@ const selectController = function () {
 };
 
 export default selectController;
-
