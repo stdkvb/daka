@@ -5,6 +5,10 @@
 		gap: 40px;
 		min-height: 540px;
 		justify-content: space-between;
+
+		@include tablet {
+			gap: 0;
+		}
 	}
 
 	&__item {
@@ -12,10 +16,12 @@
 		flex-direction: column;
 		align-items: center;
 		gap: 20px;
-		width: auto;
+		max-width: 340px;
+		flex-shrink: 1;
 
-		@include desktop_huge {
-			width: 100%;
+		@include tablet {
+			flex-shrink: 0;
+			max-width: unset;
 		}
 
 		span:not(.children) {
@@ -23,22 +29,27 @@
 			color: $grey-70;
 			align-self: flex-start;
 		}
-
+		
 		&_large {
-			max-width: 760px;
+			max-width: 700px;
 
 			.products__image {
-				max-width: unset;
 				height: 400px;
+			}
+
+			@include tablet {
+				max-width: unset;
+				.products__image {
+					height: 300px;
+				}
 			}
 		}
 	}
 
 	&__image {
 		width: 100%;
+		height: 300px;
 		transition: all $transitionDuration ease;
-		max-width: 340px;
-		height: 304px;
 		
 		img {
 			width: 100%;

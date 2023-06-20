@@ -24,7 +24,7 @@ let bg = document.querySelector('.main-screen__image')
 
 // disable swiper on desktop
 
-const mobile = window.matchMedia('(min-width:1800px)')
+const mobile = window.matchMedia('(min-width:991px)')
 let productsSwiper
 
 const mobileBreakpointChecker = function () {
@@ -38,6 +38,11 @@ const mobileBreakpointChecker = function () {
 const enableSwiperMobile = function () {
 	productsSwiper = new Swiper('.products__swiper', {
 		slidesPerView: 'auto',
+		spaceBetween: 20,
+		scrollbar: {
+			el: '.swiper-scrollbar',
+			draggable: true
+		},
 	})
 }
 mobile.addListener(mobileBreakpointChecker)
