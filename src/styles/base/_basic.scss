@@ -24,7 +24,18 @@ main {
 }
 
 h1 {
-	@include bold-72;
+	span {
+		@include bold-72-uppercase;
+		color: $grey-70;
+
+		@include tablet {
+			@include bold-60-uppercase;
+		}
+
+		@include mobile {
+			@include bold-36-uppercase;
+		}
+	}	
 }
 
 h2 {
@@ -65,7 +76,7 @@ button {
 	padding-left: 160px;
 	padding-right: 160px;
 
-	@include desktop_small {
+	@include desktop_base {
 		padding-left: 80px;
 		padding-right: 80px;
 	}
@@ -76,18 +87,24 @@ button {
 	}
 }
 
-.wrapper {
-	margin: 40px 0 100px 0;
-	padding: 60px 0 0 0;
-	border-top: solid 1px $red-20;
+.line {
+	height: 1px;
+	margin: 40px 0 60px 0;
+	background-color: $red-20;
 
 	@include tablet {
 		margin: 30px 0 60px 0;
-		padding: 40px 0 0 0;
 	}
 
 	@include mobile {
 		margin: 30px 0 60px 0;
-		padding: 20px 0 0 0;
+	}
+
+	&_white {
+		background-color:rgba(255,255,255,.7);
+	}
+
+	&_no-margin {
+		margin: 0;
 	}
 }

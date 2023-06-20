@@ -3,6 +3,7 @@
 @import 'base/vars';
 @import 'base/mixins';
 @import 'base/basic';
+@import 'base/animation';
 
 @import 'components/ui/button';
 @import 'components/ui/link';
@@ -10,6 +11,10 @@
 @import 'components/ui/input';
 
 @import 'components/business/header';
+@import 'components/business/main-screen';
+@import 'components/business/about';
+@import 'components/business/values';
+@import 'components/business/products';
 @import 'components/business/partners';
 @import 'components/business/write-us';
 @import 'components/business/contacts';

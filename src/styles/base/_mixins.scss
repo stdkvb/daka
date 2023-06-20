@@ -15,6 +15,13 @@
 	text-transform: uppercase;
 }
 
+@mixin bold-60-uppercase {
+	font-size: 60px;
+	font-weight: 600;	
+	line-height: 100%;
+	text-transform: uppercase;
+}
+
 @mixin bold-50 {
 	font-size: 50px;
 	font-weight: 600;	
@@ -60,6 +67,13 @@
 	line-height: 120%;
 }
 
+@mixin medium-32-uppercase {
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 120%;
+	text-transform: uppercase;
+}
+
 @mixin medium-18 {
 	font-size: 18px;
 	font-weight: 500;
@@ -85,6 +99,13 @@
 	line-height: 120%;
 }
 
+@mixin regular-32-uppercase {
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 120%;
+	text-transform: uppercase;
+}
+
 @mixin regular-20 {
 	font-size: 20px;
 	font-weight: 400;
@@ -93,6 +114,19 @@
 
 @mixin regular-20-uppercase {
 	font-size: 20px;
+	font-weight: 400;
+	line-height: 120%;
+	text-transform: uppercase;
+}
+
+@mixin regular-18 {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 120%;
+}
+
+@mixin regular-18-uppercase {
+	font-size: 18px;
 	font-weight: 400;
 	line-height: 120%;
 	text-transform: uppercase;
@@ -130,16 +164,37 @@
 	line-height: 120%;
 }
 
+@mixin light-20-uppercase {
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 110%;
+	text-transform: uppercase;
+}
+
 @mixin light-18 {
 	font-size: 18px;
 	font-weight: 300;
 	line-height: 110%;
 }
 
+@mixin light-18-uppercase {
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 110%;
+	text-transform: uppercase;
+}
+
 @mixin light-16 {
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 145%;
+}
+
+@mixin light-16-uppercase {
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 110%;
+	text-transform: uppercase;
 }
 
 @mixin light-14 {

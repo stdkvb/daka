@@ -15,7 +15,6 @@
 
 		&:first-of-type {
 			padding-bottom: 60px;
-			border-bottom: solid 1px $red-20;
 			
 			@include tablet {
 				padding-bottom: 30px;
