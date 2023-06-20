@@ -1,0 +1,125 @@
+.product {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 80px;
+	padding-bottom: 40px;
+
+	@include tablet_small {
+		grid-template-columns: 1fr;
+		gap: 40px;
+	}
+
+	img {
+		width: 100%;
+		object-fit: cover;
+	}
+
+	&__column {
+		display: flex;
+		flex-direction: column;
+
+		h2 {
+			@include tablet_small {
+				min-height: unset;
+			}
+		}
+
+		h4 {
+			@include medium-32-uppercase;
+			color: $grey-70;
+			margin-bottom: 40px;
+
+			span {
+				color: $red-50;
+			}
+
+			@include tablet_small {
+				min-height: unset;
+			}
+		}
+
+		p {
+			@include light-16;
+			color: $grey-70;
+			max-width: 680px;
+			margin-bottom: 32px;
+
+			&:last-of-type {
+				max-width: unset;
+			}
+		}
+	}
+
+	&__table {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		max-width: 680px;
+		margin-bottom: 80px;
+		
+		li {
+			display: flex;
+			justify-content: space-between;
+			border-bottom: solid 1px $grey-30;
+			padding: 12px 0;
+
+			span {
+				@include medium-16;
+				color: $grey-70;
+			}
+
+			&:first-child {
+				border-bottom: solid 1px $grey-70;
+				span {
+					@include medium-16-uppercase;
+				}
+			}
+
+			&:last-child {
+				flex-direction: column;
+				gap: 12px;
+				border-bottom: solid 1px $grey-70;
+			}
+		}
+	}
+
+	&__cards {
+		display: flex;
+		gap: 40px;
+		min-height: 200px;
+
+		@include desktop_large {
+			flex-direction: column;
+			gap: 20px;
+		}
+	}
+
+	&__card {
+		max-width: 353px;
+		padding: 20px 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		border-top: solid 1px $red-50;
+		border-bottom: solid 1px $red-50;
+
+		@include desktop_large {
+			max-width: unset;
+		}
+
+		p {
+			@include regular-18-uppercase;
+			color: $grey-70;
+			line-height: 27px;
+		}
+
+		span {
+			@include regular-18;
+			color: $red-50;
+		}
+	}
+
+	&__image {
+		margin: 80px 0 20px 0;
+	}
+}

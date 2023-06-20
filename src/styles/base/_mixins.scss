@@ -80,6 +80,13 @@
 	line-height: 120%;
 }
 
+@mixin medium-18-uppercase {
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 120%;
+	text-transform: uppercase;
+}
+
 @mixin medium-16 {
 	font-size: 16px;
 	font-weight: 500;
@@ -201,4 +208,11 @@
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 150%;
+}
+
+@mixin light-14-uppercase {
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 110%;
+	text-transform: uppercase;
 }

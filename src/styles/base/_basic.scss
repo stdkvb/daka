@@ -55,6 +55,10 @@ h3 {
 	}
 }
 
+p {
+	text-align: justify;
+}
+
 a {
 	text-decoration: none;
 	height: fit-content;
@@ -70,6 +74,26 @@ button {
 	:disabled {
 		cursor: default;
 	}
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: $red-50 transparent;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $red-50;
+  border-radius: 20px;
+  border: none;
 }
 
 .container {
