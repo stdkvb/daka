@@ -1,9 +1,11 @@
 import selectController from "./select";
 import menuController from "./mobile-menu";
+import takeControlCookie from "./cookie";
 
 
 selectController ();
 menuController();
+takeControlCookie('.cookie', '.cookie__accept');
 
 var rellax = new Rellax('.rellax');
 

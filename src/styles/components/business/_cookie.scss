@@ -1,0 +1,70 @@
+.cookie {
+	position: fixed;
+	bottom: 0;
+	width: 100vw;
+	background: $white;
+	padding: 24px 40px;
+	z-index: 10000;
+	display: flex;
+	visibility: hidden;
+	opacity: 0;
+	gap: 20px;
+	align-items: center;
+	justify-content: space-between;
+	transition: all $transitionDuration;
+
+	@include tablet {
+		flex-direction: column;
+		gap: 10px;
+		align-items: flex-start;
+	}
+
+	&_active {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		max-width: 762px;
+
+		h2 {
+			@include bold-20-uppercase;
+			color: $grey-80;
+		}
+
+		span {
+			@include regular-16;
+			color: $grey-80;
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		gap: 20px;
+		align-items: center;
+
+		@include tablet {
+			width: 100%;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+
+	.link {
+		min-width: fit-content;
+	}
+
+	&__accept {
+		height: unset;
+		min-width: 185px;
+
+		@include tablet {
+			align-self: center;
+		}
+	}
+
+
+}
