@@ -1,4 +1,6 @@
-.partners {
+.partners {	
+	overflow: hidden;
+	
 	&__items {
 		margin-top: 40px;
 		display: grid;

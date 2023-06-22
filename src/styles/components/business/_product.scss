@@ -3,6 +3,7 @@
 	grid-template-columns: 1fr 2fr;
 	gap: 80px;
 	padding-bottom: 40px;
+	overflow: hidden;
 
 	@include tablet_small {
 		grid-template-columns: 1fr;

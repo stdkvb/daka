@@ -2,7 +2,8 @@
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	gap: 80px;
-	padding-bottom: 80px;
+	padding-bottom: 80px;	
+	overflow: hidden;
 
 	@include tablet_small {
 		grid-template-columns: 1fr;
@@ -89,7 +90,7 @@
 		border-collapse: collapse;
 		text-align: left;
 		display: flex;
-		flex-direction: column;		
+		flex-direction: column;
 		overflow-x: scroll;
     overflow-y: hidden;
 		padding-bottom: 20px;

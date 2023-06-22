@@ -1,8 +1,8 @@
-.contacts {
+.contacts {	
+	overflow: hidden;
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
-
 	margin: 40px 0 100px 0;
 
 	@include tablet {
@@ -58,7 +58,7 @@
 
 	.contacts__map {
 		margin-top: 100px;
-		min-height: 400px;
+		height: 400px;
 
 		@include tablet {
 			margin-top: 60px;

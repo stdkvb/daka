@@ -1,0 +1,65 @@
+.notification {
+	width: 100%;
+	min-height: 100%;
+	background: rgba(0,0,0,0.5);
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+
+	&_active {
+		display: block;
+	}
+
+	&__container {
+		width: 100%;
+		max-width: 360px;
+		height: 320px;
+		background-color: $white;
+		padding: 55px 0;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+		z-index: 100;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	
+		@include mobile {
+			width: 100%;
+			top: 0;
+			right: 0;
+		}
+	
+		h4 {
+			max-width: 290px;
+			@include medium-32-uppercase;
+			color: $red-50;
+		}
+	}
+
+	&__close {
+		position: absolute;
+		top: 16px;
+		right: 16px;
+		height: 24px;
+		width: 24px;
+		z-index: 1000;
+		border: none;
+		padding: 0;
+		background: none;
+		transition: all $transitionDuration;
+		background-image: url("@icons/close.svg");
+		background-position: center;
+
+		&:hover {
+			cursor: pointer;
+			scale: 1.05;
+		}
+	}
+}
+

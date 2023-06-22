@@ -1,11 +1,13 @@
 import selectController from "./select";
 import menuController from "./mobile-menu";
 import takeControlCookie from "./cookie";
+import notificationController from "./notification";
 
 
 selectController ();
 menuController();
 takeControlCookie('.cookie', '.cookie__accept');
+notificationController();
 
 var rellax = new Rellax('.rellax');
 
@@ -14,15 +16,6 @@ let bg = document.querySelector('.main-screen__image')
         bg.style.backgroundSize = 120 - +window.pageYOffset/48+"%";
 })
 
-// const products = document.querySelectorAll('.products__item');
-// products.forEach((elem) => {
-// 	elem.addEventListener('mouseover', () => {
-// 		products.forEach((elem) => {
-// 			elem.classList.remove('active');
-// 		})
-// 		elem.classList.add('active')
-// 	})
-// })
 
 // disable swiper on desktop
 

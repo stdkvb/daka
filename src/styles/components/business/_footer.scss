@@ -2,7 +2,8 @@
 	flex: 0 0 auto;
 	background-color: $grey-80;
 	padding-top: 60px;
-	padding-bottom: 20px;
+	padding-bottom: 20px;	
+	overflow: hidden;
 
 	@include mobile {
 		padding-top: 40px;

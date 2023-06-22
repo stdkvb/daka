@@ -85,6 +85,15 @@
 		@@include('components/business/_contacts.html')
 	</main>
 	@@include('components/business/_footer.html')
+	@@include('components/business/_cookie.html')
+
+	<!-- уведомеление об успешной отправке формы, добавить класс notification_active для отображения -->
+	<div class="notification">
+		<div class="notification__container">
+			<span class="notification__close"></span>
+			<h4>Successfully</h4>
+		</div>
+	</div>
 
 	@@include('meta/_includeScripts.html')
 </body>

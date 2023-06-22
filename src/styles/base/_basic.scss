@@ -21,6 +21,8 @@ body {
 
 main {
 	flex: 1 0 auto;
+	transition: all $transitionDuration;
+	overflow: hidden;
 }
 
 h1 {
