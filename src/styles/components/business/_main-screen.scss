@@ -2,7 +2,7 @@
 	margin-top: 60px;
 	padding-bottom: 100px;
 	position: relative;
-	overflow: hidden;
+	overflow: unset;
 
 	@include tablet {
 		margin-top: 40px;
